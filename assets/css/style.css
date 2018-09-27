@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 
 body {
     background-image: url("../images/banana_background.png");
@@ -87,7 +92,8 @@ a:focus {
     clear: both;
     height: 500px;
     margin-top: 70px;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
+    min-height: 100%;
 }
 
 
@@ -135,7 +141,11 @@ p {
 }
 
 .footer-container {
-    height: 25px;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 #footer {
@@ -210,7 +220,7 @@ p {
     }
     nav {
         width: 100%;
-        padding:10px 70px 0px 80px;
+        padding:10px 70px 0px 0px;
     }
 
     ul li {
