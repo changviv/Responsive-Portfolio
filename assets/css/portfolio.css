@@ -1,0 +1,117 @@
+#portfolio-content {
+    height: 600px;
+}
+
+.card-set {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    width: 85%;
+    margin: 20px auto;
+    height: 400px;
+}
+
+.card {
+    border: solid 3px #f4c9be;
+    transition: .5s all ease;
+}
+
+.card:hover {
+    opacity: 0.5;
+    transform: translateY(-8px);
+}
+
+#card-1 {
+    background-image: url("../images/cactus.png"), url("../images/pink_rice.png");
+    background-size: 75% 75%, auto;
+    background-position: center bottom;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+#card-2 {
+    background-image: url("../images/piata.png"), url("../images/pink_rice.png");
+    background-size: 75% 75%, auto;
+    background-position: center bottom;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+
+}
+
+#card-3 {
+    background-image: url("../images/skull-1.png"), url("../images/pink_rice.png");
+    background-size: 65% 75%, auto;
+    background-position: center bottom;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+#card-4 {
+    background-image: url("../images/maracas-1.png"), url("../images/pink_rice.png");
+    background-size: 65% 75%, auto;
+    background-position: center bottom;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+#card-5 {
+    background-image: url("../images/tequila.png"), url("../images/pink_rice.png");
+    background-size: 65% 75%, auto;
+    background-position: center bottom;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+#card-6 {
+    background-image: url("../images/pyramid.png"), url("../images/pink_rice.png");
+    background-size: 80% 80%, auto;
+    background-position: center bottom;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 7px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background: #c6e7e3;
+    height: 35px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    #portfolio-content {
+        height: 750px;
+    }
+
+    .card-set {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        grid-gap: 20px;
+        width: 85%;
+        margin: 20px auto;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #portfolio-content {
+        height: 1000px;
+    }
+
+    .card-set {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+        grid-gap: 20px;
+        width: 65%;
+        margin: 20px auto;
+        height: 850px;
+    }
+
+}

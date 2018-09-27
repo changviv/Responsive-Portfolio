@@ -1,0 +1,252 @@
+/* body */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("../images/banana_background.png");
+    position: relative;
+    margin: 0px auto;
+    width: 100%;
+}
+
+/* header & nav */
+
+.header-container,
+.footer-container {
+    width: 100%;
+    background:  #f4c9be;
+}
+
+.header-container-inner {
+    width:960px;
+    margin: 0 auto;
+}
+
+#logo {
+    background-color:  #f4c9be;
+    color: #ffffff;
+    width: 25%;
+    padding:20px;
+    font-family: 'Inconsolata', monospace;
+    margin: auto;
+    float: left;
+    font-size:35px;
+}
+
+nav {
+    float:right;
+    padding:20px;
+}
+
+ul {
+    float: right;
+}
+
+ul li{
+    float: left;
+    list-style: none;
+    padding: 5px 15px;
+    letter-spacing: 1.5px;
+    font-family: 'Inconsolata', monospace;
+}
+
+a {
+    text-decoration-line: none;
+    color:  white;
+    font-size: 20px;
+    transition: .1s all ease;
+}
+
+a:hover {
+    font-size: 18px;
+}
+
+a:focus {
+    color: white;
+}
+
+.nav-border {
+    border-right: solid black 1px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* main content */
+
+.main-content {
+    width: 960px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: solid 1px #cccccc;
+    background: white;
+    clear: both;
+    height: 500px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+
+.page-title {
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    margin: 10px 45px;
+    color: #f4c9be;
+    border-bottom: solid 1px #cccccc;
+    font-family: 'Inconsolata', monospace;
+    font-size: 45px;
+}
+
+img {
+    float: left;
+    margin-left:35px;
+    margin-right: 25px;
+    padding: 20px;
+    width: 240px;
+    height: 240px;
+}
+
+.text-box {
+    width: 60%;
+    float:left;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    color: #777777;
+    font-size:15px;
+}
+
+.first-line {
+    font-size: 25px;
+}
+
+.second-line {
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+.footer-container {
+    height: 25px;
+}
+
+#footer {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size:17px;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+@media screen and (max-width: 980px) {
+    .header-container-inner {
+        width:90%;
+        margin: 0 auto;
+    }
+
+    .main-content {
+        width: 80%;
+    }
+
+    img {
+        width:30%;
+        height:30%;
+        padding: 20px 0px;
+    }
+
+    .text-box {
+        width: 55%;
+    }
+
+    .first-line {
+        font-size: 20px;
+    }
+
+    .second-line {
+       font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-container-inner {
+        width:90%;
+        margin: 0 auto;
+    }
+    nav {
+        float:right;
+        padding:30px 0px 10px 5px;
+    }
+
+    .main-content {
+        width: 95%;
+    }
+
+    img {
+        width:30%;
+        height:30%;
+        padding: 20px 0px;
+        display: inline-block;
+    }
+
+    .text-box {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #logo {
+        width: 100%;
+        text-align:center;
+    }
+    nav {
+        width: 100%;
+        padding:10px 70px 0px 80px;
+    }
+
+    ul li {
+        text-align: center;
+    }
+
+    .main-content {
+        width: 90%;
+        height: 900px;
+    }
+
+    img {
+        box-sizing: border-box;
+        width:75%;
+        margin: 10px 71px;
+        padding: 0px;
+        clear:both;
+    }
+
+    .text-box {
+        margin-top: 25px;
+        margin-left: 35px;
+        width: 90%;
+    }
+
+    .first-line {
+        font-size: 25px;
+    }
+
+    .second-line {
+        font-size: 15px;
+    }
+
+    a {
+
+    font-size: 16.5px;
+
+}
+}
